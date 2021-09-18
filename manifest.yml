@@ -1,5 +1,5 @@
 applications:
-  - name: welcome
+  - name: sap_fiori
     memory: 32M
     buildpacks:
       - staticfile_buildpack
