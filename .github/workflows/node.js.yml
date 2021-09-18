@@ -19,12 +19,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
+    - name: Deploy to Cloud Foundry
+      uses: jhunt/cf-push@v1
       with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm install @ui5/cli
-    - run: npm install @sap/ux-ui5-tooling
-    - run: npm run deploy
+        api: ${{ secrets.CF_API }}
+        org: ${{ secrets.CF_ORG }}
+        space: ${{ secrets.CF_SPACE }}
+        username: ${{ secrets.CF_USERNAME }}
+        password: ${{ secrets.CF_PASSWORD }}
+        manifest: manifest.yml
+        validate: false
