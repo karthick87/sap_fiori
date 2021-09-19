@@ -42,8 +42,8 @@
 		
 		var worstCase = new sap.m.StandardTile("worst_case", {
 			icon : sap.ui.core.IconPool.getIconURI("contacts"),
-			number : "JSON",
-			numberUnit : "OData",
+			number : "Demo",
+			numberUnit : "Card1",
 			title : "List of Board Members",
 			info : "Consume OData",
 			infoState : "Success",
@@ -53,8 +53,8 @@
 
 		var crudList = new sap.m.StandardTile("crud_list", {
 			icon : sap.ui.core.IconPool.getIconURI("contacts"),
-			number : "CRUD",
-			numberUnit : "Contacts",
+			number : "Demo",
+			numberUnit : "Card2",
 			title : "Create, Read, Update, Delete",
 			info : "Consume MySQL DB",
 			infoState : "Success",
@@ -64,8 +64,8 @@
 		
 		var largeNum = new sap.m.StandardTile("large_num", {
 			icon : sap.ui.core.IconPool.getIconURI("lead"),
-			number : "Rp",
-			numberUnit : "$",
+			number : "Demo",
+			numberUnit : "Card3",
 			title : "Foreign Exchange Rate",
 			info : "Currency Rate",
 			infoState : "Success",
@@ -75,8 +75,8 @@
 		
 		var mediumNum = new sap.m.StandardTile("medium_number", {
 			icon : sap.ui.core.IconPool.getIconURI("order-status"),
-			number : "Master",
-			numberUnit : "Detail",
+			number : "Demo",
+			numberUnit : "Card4",
 			title : "Sales Distribution",
 			info : "Sales Report",
 			infoState : "Warning",
@@ -84,10 +84,10 @@
 		});
 		tiles.push(mediumNum);
 		
-		var titleOnly = new sap.m.StandardTile("title_onlyy", {
+		var titleOnly = new sap.m.StandardTile("title_only", {
 			icon : sap.ui.core.IconPool.getIconURI("sales-quote"),
-			number : "3780,8",
-			numberUnit : "EURO",
+			number : "Demo",
+			numberUnit : "Card5",
 			title : "Purchase Orders",
 			info : "PO Report",
 			infoState : "Warning"		
@@ -111,16 +111,16 @@
 		
 		var iconNumTitle = new sap.m.StandardTile("icon_num_title", {
 			icon : sap.ui.core.IconPool.getIconURI("inbox"),
-			number : "2226,3",
-			numberUnit : "euro",
+			number : "Demo",
+			numberUnit : "Card8",
 			title : "Late Purchase Orders"
 		});
 		tiles.push(iconNumTitle);	
 		
 		var iconNumTitleInfo = new sap.m.StandardTile("icon_num_title_info", {
 			icon : sap.ui.core.IconPool.getIconURI("inbox"),
-			number : "1790,7",
-			numberUnit : "euro",			
+			number : "Demo",
+			numberUnit : "Card9",			
 			title : "Overdue Purchase Requisitions",
 			info : "PR Maturiy",
 			infoState : "Error"
@@ -129,8 +129,8 @@
 		
 		var numericallyLargeNum = new sap.m.StandardTile("numerically_large_num", {
 			icon : sap.ui.core.IconPool.getIconURI("sales-order"),
-			number : "1084,9",
-			numberUnit : "euro",
+			number : "Demo",
+			numberUnit : "Card10",
 			title : "Sales Orders",
 			info : "Sales Orders Report",
 			infoState : "Success"
@@ -148,7 +148,7 @@
 		page.setShowHeader(true);
 			
 		app.addPage(page);			
-		page.setTitle("Transaction Menu"); 		
+		page.setTitle("SAP Fiori DEMO"); 		
 		page.addContent(tc);
 
 							app.setBackgroundImage("monas.jpg");

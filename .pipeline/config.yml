@@ -1,0 +1,21 @@
+---
+general:
+  pipeline: "sap-ui5-cf"
+stages:
+  testStage:
+    enable: true
+  deployStage:
+    enable: true
+  tmsStage:
+    enable: false
+  malwareScanStage:
+    enable: true
+steps:
+  mtaBuild:
+    applicationName: ""
+  cloudFoundryDeploy:
+    cloudFoundry:
+      apiEndpoint: "https://api.cf.eu10.hana.ondemand.com"
+      org: "73d922e2trial"
+      space: "html5demo"
+      credentialsId: "sap-cockpit-auth"
