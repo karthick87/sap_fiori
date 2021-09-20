@@ -14,18 +14,11 @@
                     ],
   "role-templates": [  
                      {  
-                       "name"             : "Viewer",  
+                       "name"             : "Business_Application_Studio_Administrator",  
                        "description"      : "View Info.",  
                        "scope-references" : [ 
                                              "$XSAPPNAME.Display"
                                             ] 
-                     }, 
-                     { 
-                       "name"             : "Editor",  
-                       "description"      : "Maintain Info",  
-                       "scope-references" : [ "$XSAPPNAME.Display", 
-                                              "$XSAPPNAME.Update"  
-                                            ]
                      }
   ] 
 }
