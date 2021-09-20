@@ -1,24 +1,20 @@
 {
-  "xsappname"     : "demofiori", 
-  "description"   : "Enable myApp for multi tenants", 
-  "tenant-mode"   : "shared", 
-  "scopes"        : [ 
-                     { 
-                       "name"             : "$XSAPPNAME.Display", 
-                       "description"      : "Display Info." 
-                     }, 
-                     {
-                       "name"             : "$XSAPPNAME.Update", 
-                       "description"      : "Update Info."
-                     } 
-                    ],
-  "role-templates": [  
-                     {  
-                       "name"             : "Business_Application_Studio_Administrator",  
-                       "description"      : "View Info.",  
-                       "scope-references" : [ 
-                                             "$XSAPPNAME.Display"
-                                            ] 
-                     }
-  ] 
+  "xsappname": "demofiori",
+  "tenant-mode": "dedicated",
+  "description": "Security profile of called application",
+  "scopes": [
+    {
+      "name": "uaa.user",
+      "description": "UAA"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "Token_Exchange",
+      "description": "UAA",
+      "scope-references": [
+        "uaa.user"
+      ]
+    }
+  ]
 }

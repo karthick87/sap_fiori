@@ -1,5 +1,5 @@
 applications:
-  - name: sap_fiori_demo
+  - name: demofiori
     memory: 32M
     buildpacks:
       - staticfile_buildpack
